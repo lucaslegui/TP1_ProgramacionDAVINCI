@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+  background-image: linear-gradient(
+    135deg,
+    #00b7d4,
+    #505488,
+    #2f3f80,
+    #161569,
+    #5a4894,
+    #a950a1,
+    #ff7cae
+  );
+  background-size: 500%;
+  animation: fanimado 10s infinite;
+}
+
+@keyframes fanimado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.boton {
+  background-image: linear-gradient(to right, #ff6a00 0%, #ee0979 100%);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.boton:hover {
+  background-image: linear-gradient(to left, #ff6a00 0%, #ee0979 100%);
+}
+
+
+#productos {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  color: rgb(168, 105, 105);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 5px rgba(194, 11, 11, 0.2);
+  display: none;
+  background-color: #00b7d4;
+}
+
+#productos th {
+  background-color: #0c29eb;
+  color: rgb(121, 244, 14);
+  text-align: left;
+  padding: 8px;
+}
+
+#productos td {
+  border-bottom: 1px solid #ff0000;
+  padding: 8px;
+}
+
+#productos tr:hover {
+  background-color: #22daff;
+}
